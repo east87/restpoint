@@ -55,3 +55,70 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+
+
+
+# Restpoint Codeigniter 4 With Postman api
+Restfull API user point system
+
+# Database 
+create database restful_db & import restful_db
+
+
+# Running project by php spark
+php spark serve
+
+# Open postman APP
+
+# Show data all 
+ GET http://localhost:8080/points
+
+# Show data by id 
+ GET http://localhost:8080/points/{user_id}
+ 
+ # Create user point
+ POST http://localhost:8080/points
+ body x-www-form-urlencoded key :
+ user_name : 
+ user_point : 
+
+ # Add  point 
+ PUT http://localhost:8080/points/{user_id}/plus
+ body x-www-form-urlencoded key :
+ user_point 
+
+# Reducing  point
+ PUT http://localhost:8080/points/{user_id}/min
+body x-www-form-urlencoded key :
+ user_point 
+ 
+# Delete  user
+DELETE http://localhost:8080/points/{user_id}
+
+# running without php spark
+# Show data all 
+ GET http://localhost/restpoint/points
+
+# Show data by id 
+ GET http://localhost/restpoint/points/{user_id}
+ 
+ # Create user point
+ POST http://localhost/restpoint/points
+ body x-www-form-urlencoded key :
+ user_name : 
+ user_point : 
+
+ # Add point
+ PUT http://localhost/restpoint/points/{user_id}/plus
+body x-www-form-urlencoded key :
+ user_point 
+
+# Reducing  point
+ PUT http://localhost/restpoint/points/{user_id}/min
+body x-www-form-urlencoded key :
+ user_point 
+ 
+# Delete  user
+DELETE http://localhost/restpoint/points/{user_id}
+
